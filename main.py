@@ -109,3 +109,5 @@ var3 = (*another_str,)
 
 print()
 print('var3', var3, type(var3)) # tuple
+
+
