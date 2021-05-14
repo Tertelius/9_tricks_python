@@ -1,16 +1,30 @@
-# This is a sample Python script.
+import random as rnd
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+#  ------ 1. Выбор случайного элемента из последовательности элементов-----
+#  функция random.choice(seq) позволяет выбрать случайный элемент из индексируемой последовательности. Речь идет о
+#  списках, о кортежах и даже о строках.
+#
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+my_list = [1, 2, 5, 8.4, 'go']
+print(rnd.choice(my_list))
+print(rnd.choice('привет_мир)'))
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+#  Практический пример:
+
+
+def book_picker(books):
+    book_choice = rnd.choice(books)
+    books.remove(book_choice)
+    return f"You picked '{book_choice}'"
+
+books = ["Harry potter", "Don Quixote", "Learn Python by Daniel Diaz", "Dracula"]
+print(book_picker(books))
+print(books)
+
+
+#  ----- 2.
+
+
+
+
